@@ -1,12 +1,13 @@
 
-// Configure Slider
+// ======Configure Slider ======
 
 $(".carousel").carousel({
   interval: 5000,
   pause: "hover"
 });
 
-// ScrollReveal
+
+// ======= ScrollReveal ========
 
 window.sr = ScrollReveal();
 
@@ -30,9 +31,8 @@ sr.reveal(".pet-icon", {
 
 
 
+// ===== Video play =======
 
-
-// Video play
 $(function () {
     // Auto play modal video
     $(".video").click(function () {
@@ -46,21 +46,24 @@ $(function () {
     });
   });
 
-  // ===== Scroll to Top ==== 
+
+
+// ===== Scroll to Top ==== 
+
 $(window).scroll(function() {
-  if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-      $('#return-to-top').fadeIn(200);    // Fade in the arrow
+  if ($(this).scrollTop() >= 50) {        
+      $('#return-to-top').fadeIn(200);    
   } else {
-      $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+      $('#return-to-top').fadeOut(200);   
   }
 });
-$('#return-to-top').click(function() {      // When arrow is clicked
+$('#return-to-top').click(function() {      
   $('body,html').animate({
-      scrollTop : 0                       // Scroll to top of body
+      scrollTop : 0                       
   }, 500);
 });
     
 
-  // Update current year for the copyright
+// === Update current year for the copyright ===
 
 $("#year").text(new Date().getFullYear());
