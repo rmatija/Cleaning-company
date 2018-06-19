@@ -1,0 +1,172 @@
+body{
+    font-family: Titillium Web;
+}
+
+/*****************NAVBAR****************/
+
+.logo{
+    margin-right: 20px;
+}
+
+
+.navbar .nav-link{
+    font-size: 17px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+.navbar .nav-item.active{
+    border-bottom: 1px solid #33dd08
+}
+
+/*****************CAROUSEL****************/
+
+#showcase{
+    margin-bottom: 100px;
+}
+
+.carousel-item{
+    height: 400px;
+    background-size: cover; 
+}
+
+.carousel-item img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+
+}
+
+
+/*************ICONS*********/
+#home-icons{
+    margin-bottom: 90px;
+}
+
+#home-icons img{
+    width: 220px;
+    height: 150px;
+}
+
+
+/*************SERVICES HOME PAGE*********/
+
+.services{
+    padding:20px 0 35px 0;
+    margin-bottom: 70px;
+    text-align: center;
+    text-align: center;
+    border-bottom: #b7e21d 3px solid;
+    background-color: #f5f5f0;
+}
+
+.services-cards-background{
+    background-color: #b7e21d;
+}
+
+.card-deck a{
+    color: black;
+}
+
+a:visited{
+    color:black;
+  }
+
+.card-title{
+    text-decoration: underline;
+}  
+
+/*************VIDEO****************/
+
+
+.video-container{
+    position: relative;
+    text-align: center;
+    margin-bottom: 90px;
+    margin-top: 90px;
+}
+
+.text-inside{
+    background: url(../img/tiles-video.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 350px;
+    opacity: 0.7;
+}
+
+.text-inside h1{
+    padding-top: 200px;
+}
+
+.video{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*************FOOTER****************/
+
+#footer-social{
+    background: #b7e21d;
+    padding: 0 50px;
+}
+
+/*****RETURN TO TOP BUTTON**********/
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #b7e21d;
+    
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+
+
+
+/*************MEDIA QUERIES*********/
+
+@media(max-width: 768px){
+	.navbar .nav-item.active{
+        border-bottom: none;
+    }
+}
+
