@@ -11,23 +11,27 @@ $(".carousel").carousel({
 
 window.sr = ScrollReveal();
 
-sr.reveal(".green-icon", {
+sr.reveal(".green-icon,  .leftCard, .christina-staff", {
     duration: 3000,
     origin: "left",
     distance: "200px"
 });
 
-sr.reveal(".service-icon", {
+sr.reveal(".service-icon, .rightCard, .charlotte-staff", {
   duration: 3000,
   origin: "top",
   distance: "100px"
 });
 
-sr.reveal(".pet-icon", {
+sr.reveal(".pet-icon, .middleCard, .björn-staff", {
   duration: 3000,
   origin: "right",
   distance: "200px"
 });
+
+
+
+
 
 
 
@@ -47,6 +51,10 @@ $(function () {
   });
 
 
+
+  // ====== Anmations accomplishments ======//
+
+  new WOW().init();
 
 // ===== Scroll to Top ==== 
 
