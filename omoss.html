@@ -20,8 +20,8 @@
   <nav class="navbar navbar-expand-md navbar-light">
     <div class="container">
         <a class="navbar-brand" href="index.html">
-            <img src="img/logo.png" width="70" height="70" class="logo d-inline-block align-center" alt="">
-            MacMaggie´s Städ &amp; Golvvård
+            <img src="img/logo.png" class="logo-img" alt="">
+            <p class="logo d-inline-block align-center pl-4">MacMaggie´s Städ &amp; Golvvård</p>
         </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
@@ -39,6 +39,12 @@
           </li>
           <li class="nav-item">
               <a href="kontakt.html" class="nav-link">Kontakt</a>
+          </li>
+          <li class="nav-item">
+                <div class="container kontakt-nav">
+                    <i class="fas fa-phone"><span class="ml-2">032/ 88 96 55</span></i><br>
+                    <i class="far fa-envelope"><span class="ml-2">info&commat;macmagies.se</span></i>
+                </div>
           </li>
         </ul>
       </div>
@@ -116,44 +122,121 @@
     </div>
 </div>
 
-      
+<!-- Modal -->
+<div class="container" id="modal-container">
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-primary button-rabbat btn-width" data-toggle="modal" data-target="#exampleModal"><i class="far fa-thumbs-up fa-2x"></i>
+               <p class="btn-text">Få din 50% rabatt!</p> 
+              </button>
+          </div>
+          <div class="col"> 
+              <button type="button" class="btn btn-success button-hembesok btn-width" data-toggle="modal" data-target="#exampleModa2"><i class="fas fa-home fa-2x"></i>
+                <p class="btn-text">Kostnadsfritt hembesök!</p>
+              </button>
+          </div>
+        </div>
+    
+    
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Få din 50% rabatt!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <p><h2>Aktuellt</h2> Prova fyra tillfällen och få 50% rabatt på första tillfället.
+                  Efter de fyra städtillfällena kan du välja att avsluta eller så fortlöper det som abonnemang. Ni kan abonnera på städning varje vecka, varannan vecka, eller minst 1 gång per månad.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a class="btn btn-primary" href="kontakt.html" role="button">Kontakt oss!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="modal fade" id="exampleModa2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Kostnadsfritt hembesök!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body"><p>Alla lägenheter och hus ser olika ut, och vi hjälper er att kostnadsfritt ta fram ett skräddarsytt förslag som passar för just ert boende. Vi kan även svara på lite frågor gällande RUT-avdraget under besöket om ni har funderingar kring det.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <a class="btn btn-primary" href="kontakt.html" role="button">Kontakt oss!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>      
 
 
 <!-- FOOTER -->
-<footer class="page-footer font-small blue-grey lighten-5 mt-4">
-    <div>
-      <div id="footer-social">
-          <div class="row py-4 d-flex align-items-center">
-            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-              <h6 class="mb-0">Få kontakt med oss på sociala nätverk!</h6>
+
+<footer class="page-footer font-small pt-3 mt-3">
+        <div class="container text-center text-md-left">
+          <div class="row">
+            <div class="col-md-4 mx-auto mb-3">
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">MacMaggie´s Städ &amp; Golvvård</h5>
+                <img class="mb-2" src="img/green_enviroment_icon.png" alt="clean_green_icon">
             </div>
-            <div class="col-md-6 col-lg-7 text-center text-md-right">
-              <a class="fb-ic">
-                  <i class="fab fa-facebook-f mr-4"></i>
-              <a class="gplus-ic">
-                  <i class="fab fa-google-plus-g mr-4"></i>
-              </a>
-              <a class="li-ic">
-                  <i class="fab fa-linkedin-in mr-4"></i>
-              </a>
-              <a class="ins-ic">
-                  <i class="fab fa-instagram mr-4"></i>
-              </a>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-2 mx-auto">
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+              <ul class="list-unstyled">
+                <li class="pb-2">
+                    <a href="index.html">Hem</a>
+                </li>
+                <li class="pb-2">
+                  <a href="omoss.html">Om oss</a>
+                </li>
+                <li class="pb-2">
+                  <a href="services.html">Tjänster</a>
+                </li>
+                <li>
+                  <a href="kontakt.html">Kontakt</a>
+                </li>
+              </ul>
             </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-2 mx-auto">
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">BESÖKS/
+                  POSTADRESS</h5>
+                  <p>FLINTVÄGEN 6 A <br>907 40 Umeå<br>Västerbottens län </p>
+            </div>
+            <div class="col-md-2 mx-auto">
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">KONTAKT</h5>
+                    <p>072 - 66 55 23 <br>info@macmagies.com<br>MacMaggie´s Städ &amp; Golvvård<br>Organisationsnummer:<br>355603-4920 </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="footer-copyright text-center text-black-50 py-3"><p>Copyright &copy; <span id="year"></span>  MacMaggie´s Städ &amp; Golvvård</p>
-    </div>
-</footer>
+        <div id="footer-social">
+            <div class="row py-4 d-flex align-items-center">
+              <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                <h6 class="mb-0">Få kontakt med oss på sociala nätverk!</h6>
+              </div>
+              <div class="col-md-6 col-lg-7 text-center text-md-right">
+                  <button type="button" class="btn btn-primary button-socials "><i class="fab fa-facebook-f fa-2x"></i></button>
+                  <button type="button" class="btn btn-danger button-socials "><i class="fab fa-google-plus-g fa-2x"></i></button>
+                  <button type="button" class="btn btn-info button-socials "><i class="fab fa-twitter fa-2x"></i></button>
+                  <button type="button" class="btn btn-primary button-socials "><i class="fab fa-linkedin-in fa-2x"></i></button>
+              </div>
+          </div>
+        </div>
+        <div class="footer-copyright text-center text-black-50 py-3"><p>Copyright &copy; <span id="year"></span>  MacMaggie´s Städ &amp; Golvvård</p>
+        </div>
+      </footer>
  
-
   
-
-  <!--RETURN TO TOP BUTTON-->
-    <a href="" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
-
-
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>

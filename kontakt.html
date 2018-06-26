@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+  crossorigin="anonymous">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+  crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>MacMaggie’s Städ</title>
+</head>
+
+<body>
+
+  
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" class="logo-img" alt="">
+            <p class="logo d-inline-block align-center pl-4">MacMaggie´s Städ &amp; Golvvård</p>
+        </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Hem</a>
+          </li>
+          <li class="nav-item">
+            <a href="omoss.html" class="nav-link">Om oss</a>
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link">Tjänster</a>
+          </li>
+          <li class="nav-item active">
+              <a href="kontakt.html" class="nav-link">Kontakt</a>
+          </li>
+          <li class="nav-item">
+              <div class="container kontakt-nav">
+                  <i class="fas fa-phone"><span class="ml-2">032/ 88 96 55</span></i><br>
+                  <i class="far fa-envelope"><span class="ml-2">info&commat;macmagies.se</span></i>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header id="page-header-kontakt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 m-auto text-center ">
+                    <h1 class="font-weight-bold ">Kontakt oss med tillförsikt!</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+ <section id="kontakt" class="container">
+        <div class="row">
+          <div class="col-lg-5 mb-lg-0 mb-4">
+            <div class="card">
+              <div class="card-body whole_contact">
+                <div class="form-header  accent-1 kontakt_oss">
+                  <h3 class="mt-2 "><i class="fa fa-envelope"></i> Kontakt oss:</h3>
+                </div>
+                <div class="md-form">
+                  <i class="fa fa-user prefix grey-text"></i>
+                  <input type="text" id="form-name" class="form-control">
+                  <label for="form-name">Namn</label>
+                </div>
+                <div class="md-form">
+                  <i class="fa fa-envelope prefix grey-text"></i>
+                  <input type="text" id="form-email" class="form-control">
+                  <label for="form-email">E-postadress</label>
+                </div>
+                <div class="md-form">
+                  <i class="fa fa-tag prefix grey-text"></i>
+                  <input type="text" id="form-Subject" class="form-control">
+                  <label for="form-Subject">Ämne</label>
+                </div>
+                <div class="md-form">
+                        <i class="fas fa-pencil-alt prefix grey-text"></i>
+                  <textarea type="text" id="form-text" class="form-control md-textarea" rows="3"></textarea>
+                  <label for="form-text">Meddelande</label>
+                </div>
+                <div class="text-center">
+                  <button class="btn btn-light-blue">Skicka</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div id="map" class="rounded z-depth-1-half " style="height: 400px"></div>
+            <br>
+            <div class="row text-center">
+              <div class="col-md-4">
+                <a class="btn-floating accent-1">
+                  <i class="fa fa-map-marker"></i>
+                </a>
+                <p>FLINTVÄGEN 6 A</p>
+                <p class="mb-md-0">Sverige</p>
+              </div>
+              <div class="col-md-4">
+                <a class="btn-floating accent-1">
+                  <i class="fa fa-phone"></i>
+                </a>
+                <p>072 - 66 55 23</p>
+                <p class="mb-md-0">Mon - Fre, 8:00-18:00</p>
+              </div>
+              <div class="col-md-4 ">
+                <a class="btn-floating accent-1">
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <p>info@macmagies.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+<!-- FOOTER -->
+
+  <footer class="page-footer font-small pt-3 mt-3">
+      <div class="container text-center text-md-left">
+        <div class="row">
+          <div class="col-md-4 mx-auto mb-3">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">MacMaggie´s Städ &amp; Golvvård</h5>
+              <img class="mb-2" src="img/green_enviroment_icon.png" alt="clean_green_icon">
+          </div>
+          <hr class="clearfix w-100 d-md-none">
+          <div class="col-md-2 mx-auto">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+            <ul class="list-unstyled">
+              <li class="pb-2">
+                  <a href="index.html">Hem</a>
+              </li>
+              <li class="pb-2">
+                <a href="omoss.html">Om oss</a>
+              </li>
+              <li class="pb-2">
+                <a href="services.html">Tjänster</a>
+              </li>
+              <li>
+                <a href="kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+          <hr class="clearfix w-100 d-md-none">
+          <div class="col-md-2 mx-auto">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">BESÖKS/
+                POSTADRESS</h5>
+                <p>FLINTVÄGEN 6 A <br>907 40 Umeå<br>Västerbottens län </p>
+          </div>
+          <div class="col-md-2 mx-auto">
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">KONTAKT</h5>
+                  <p>072 - 66 55 23 <br>info@macmagies.com<br>MacMaggie´s Städ &amp; Golvvård<br>Organisationsnummer:<br>355603-4920 </p>
+          </div>
+        </div>
+      </div>
+      <div id="footer-social">
+          <div class="row py-4 d-flex align-items-center">
+            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+              <h6 class="mb-0">Få kontakt med oss på sociala nätverk!</h6>
+            </div>
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
+                <button type="button" class="btn btn-primary button-socials "><i class="fab fa-facebook-f fa-2x"></i></button>
+                <button type="button" class="btn btn-danger button-socials "><i class="fab fa-google-plus-g fa-2x"></i></button>
+                <button type="button" class="btn btn-info button-socials "><i class="fab fa-twitter fa-2x"></i></button>
+                <button type="button" class="btn btn-primary button-socials "><i class="fab fa-linkedin-in fa-2x"></i></button>
+            </div>
+        </div>
+      </div>
+      <div class="footer-copyright text-center text-black-50 py-3"><p>Copyright &copy; <span id="year"></span>  MacMaggie´s Städ &amp; Golvvård</p>
+      </div>
+    </footer>
+    
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy4ysfRXPSyLeu4oC9L11n0Nmyw8du0as&callback=initMap"
+async defer></script>
+  <script src="js/main.js"></script>
+  
+</body>
+</html>

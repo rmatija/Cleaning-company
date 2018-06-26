@@ -1,5 +1,5 @@
 
-// ======Configure Slider ======
+// ======Configure Slider ====== //
 
 $(".carousel").carousel({
   interval: 5000,
@@ -14,25 +14,33 @@ window.sr = ScrollReveal();
 sr.reveal(".green-icon,  .leftCard, .christina-staff", {
     duration: 3000,
     origin: "left",
-    distance: "200px"
+    distance: "200px",
+    mobile: false
 });
 
-sr.reveal(".service-icon, .rightCard, .charlotte-staff", {
+sr.reveal(".service-icon, .middleCard, .charlotte-staff", {
   duration: 3000,
   origin: "top",
-  distance: "100px"
+  distance: "100px",
+  mobile: false
 });
 
-sr.reveal(".pet-icon, .middleCard, .björn-staff", {
+sr.reveal(".pet-icon, .rightCard, .björn-staff", {
   duration: 3000,
   origin: "right",
-  distance: "200px"
+  distance: "200px",
+  mobile: false
 });
 
 
 
+// ======== Slider with reference  ========= //
 
-
+$(".slider").slick({
+  infinite: true,
+  slideToShow: 1,
+  slideToScroll: 1
+});
 
 
 // ===== Video play =======
@@ -50,26 +58,35 @@ $(function () {
     });
   });
 
+  /******* Google Map *******/
 
+  function initMap(){
+    //map options
+    var options = {
+        zoom: 15,
+        center: {
+            lat:63.802301,
+            lng:20.322301
+        }
+    }
+    //new map
+    map = new google.maps.Map(document.getElementById('map'), options);
+
+    //add marker
+    var marker = new google.maps.Marker({
+        position:{
+            lat:63.802301,
+            lng: 20.322301
+        },
+        map: map
+    })
+}
 
   // ====== Anmations accomplishments ======//
 
   new WOW().init();
 
-// ===== Scroll to Top ==== 
-
-$(window).scroll(function() {
-  if ($(this).scrollTop() >= 50) {        
-      $('#return-to-top').fadeIn(200);    
-  } else {
-      $('#return-to-top').fadeOut(200);   
-  }
-});
-$('#return-to-top').click(function() {      
-  $('body,html').animate({
-      scrollTop : 0                       
-  }, 500);
-});
+  
     
 
 // === Update current year for the copyright ===
