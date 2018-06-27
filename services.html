@@ -14,10 +14,7 @@
 <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
-  <link rel="stylesheet" href="css/style.css">
-  <title>MacMaggie’s Städ</title>
+<title>MacMaggie’s Städ</title>
 </head>
 
 <body>
@@ -203,39 +200,65 @@
   </section>
 
 <!-- TESTIMONIALS   -->
-  
-<section id="referenser" class="p-4">
-    <div class="container">
-      <h2 class="text-center">
-          Referenser
-      </h2>
-      <div class="row text-center">
-        <div class="col">
-          <div class="slider">
-            <div>
+
+<div class="container">
+  <div id="accordion" class="text-center">
+    <h1 class="referenser-heading">Referenser</h1>
+      <div class="card ">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-outline-success collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Trappstädning
+            </button>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
               <blockqoute class="blockqoute">
-                <p class="mb-2 mt-1">
-                    Vi anlitar Cleaning Services när vår tid ej räcker till. Bra pris samt väl utfört arbete.
-                </p>
-                <footer class="blockqoute-footer">
-                  Emily Björken, Trappstädning
-                  <br><cite class="Company 1">23.10.2017.</cite>
-                </footer>
-              </blockqoute>
-            </div>
-            <div>
-                <blockqoute class="blockqoute">
                   <p class="mb-2 mt-1">
-                      Bra städat. Rent & Snyggt! Trevlig personal
+                      Vi anlitar Cleaning Services när vår tid ej räcker till. Bra pris samt väl utfört arbete.
                   </p>
                   <footer class="blockqoute-footer">
-                    Björn Borg, Hemstädning
-                    <br><cite class="Company 2">5.6.2018</cite>
+                      Emily Björken, Trappstädning
+                    <br><cite class="Company 2">3.3.2018</cite>
                   </footer>
                 </blockqoute>
-              </div>
-              <div>
-                  <blockqoute class="blockqoute">
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-outline-success collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Hemstädning
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+              <blockqoute class="blockqoute">
+                  <p class="mb-2 mt-1">
+                      ”Outstanding service, trodde inte det var möjligt! Att en så smutsig lägenhet kan bli så fin, på så kort tid – helt otroligt – jag kommer absolut att rekommendera detta företag. Jag är supernöjd!
+                  </p>
+                  <footer class="blockqoute-footer">
+                    Mark, Hemstädning
+                    <br><cite class="Company 3">3.1.2018..</cite>
+                  </footer>
+                </blockqoute>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-outline-success collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Flyttstädning
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+                <blockqoute class="blockqoute">
                     <p class="mb-2 mt-1">
                         Trevliga, noggranna och snabba! Mycket nöjd! Bra service med trevlig personal. Lätta att få tag på och måna om att det skulle bli ett bra jobb. Kan varmt rekommendera till andra. Väl värt pengarna!
                     </p>
@@ -244,23 +267,12 @@
                       <br><cite class="Company 3">13.8.2017.</cite>
                     </footer>
                   </blockqoute>
-              </div>
-              <div>
-                  <blockqoute class="blockqoute">
-                    <p class="mb-2 mt-1">
-                        ”Outstanding service, trodde inte det var möjligt! Att en så smutsig lägenhet kan bli så fin, på så kort tid – helt otroligt – jag kommer absolut att rekommendera detta företag. Jag är supernöjd!
-                    </p>
-                    <footer class="blockqoute-footer">
-                      Mark, Hemstädning
-                      <br><cite class="Company 3">3.1.2018..</cite>
-                    </footer>
-                  </blockqoute>
-              </div>
+            </div>
           </div>
         </div>
-      </div>
     </div>
-  </section>
+</div>
+
 
 
 <!-- FOOTER -->
@@ -319,6 +331,7 @@
       </div>
     </footer>
     
+    <button id="to_top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -329,8 +342,7 @@
       crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
-  <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
   
 </body>
 </html>

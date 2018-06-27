@@ -33,16 +33,6 @@ sr.reveal(".pet-icon, .rightCard, .björn-staff", {
 });
 
 
-
-// ======== Slider with reference  ========= //
-
-$(".slider").slick({
-  infinite: true,
-  slideToShow: 1,
-  slideToScroll: 1
-});
-
-
 // ===== Video play =======
 
 $(function () {
@@ -87,7 +77,20 @@ $(function () {
   new WOW().init();
 
   
-    
+  // ======= Scroll up button ======== //
+    $(window).scroll(function() {
+      if ($(this).scrollTop() >= 200) {       
+          $('#to_top').fadeIn(200);    
+      } else {
+          $('#to_top').fadeOut(200);   
+      }
+  });
+  $('#to_top').click(function() {      
+      $('body,html').animate({
+          scrollTop : 0                       
+      }, 1000);
+  });
+
 
 // === Update current year for the copyright ===
 
